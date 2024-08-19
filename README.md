@@ -1,2 +1,2 @@
 # Hackerrank.js
-Exercícios hackerrank
+Exercícios hackerrank na trilha de algoritmos em js
