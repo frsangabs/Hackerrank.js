@@ -31,6 +31,21 @@ function readLine() {
 
 function diagonalDifference(arr) {
     // Write your code here
+    let diagPrinc = 0
+    let diagSec = 0
+    let n = arr.length
+    for(let i = 0; i < n; i++){
+        diagPrinc += arr[i][i]
+        diagSec += arr[i][n-1-i]
+    }
+    let diferenca = diagPrinc - diagSec
+    let valorAbsoluto
+    if(diferenca < 0){
+        valorAbsoluto = -diferenca
+    }else {
+        valorAbsoluto = diferenca
+    }
+    return valorAbsoluto
     }
 
 function main() {
