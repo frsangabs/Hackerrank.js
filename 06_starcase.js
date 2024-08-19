@@ -28,8 +28,20 @@ function readLine() {
 
 function staircase(n) {
     // Write your code here
-
+    for(let i = 1; i <= n; i++){
+        let cont = ''
+        
+        for(let s = n-i; s > 0; s--){
+            cont += ' '
+        }
+        for(let x = 0; x < i; x++){
+            cont += '#'
+        }
+        console.log(cont)
+    }
 }
+
+
 
 function main() {
     const n = parseInt(readLine().trim(), 10);
