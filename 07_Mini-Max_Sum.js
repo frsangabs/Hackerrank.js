@@ -28,7 +28,26 @@ function readLine() {
 
 function miniMaxSum(arr) {
     // Write your code here
+    let min = arr[0]
+    let max = arr[0]
+    let arrSum = 0
 
+    for(let i = 0; i < arr.length; i++){
+        
+        arrSum += arr[i]
+        
+        if(arr[i] < min){
+            min = arr[i]
+        }
+        if (arr[i] > max){
+            max = arr[i]
+        }
+    }
+    
+    let minSum = arrSum - max
+    let maxSum = arrSum - min
+    
+    console.log(minSum + " " + maxSum)
 }
 
 function main() {
