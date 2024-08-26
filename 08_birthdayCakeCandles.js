@@ -31,6 +31,20 @@ function readLine() {
 
 function birthdayCakeCandles(candles) {
     // Write your code here
+    let tallest = candles[0]
+    let velas = 0
+    
+    for(let i=0; i<candles.length; i++){
+        if(tallest < candles[i]){
+            tallest = candles[i]
+        }
+    }
+    for(let i=0; i<candles.length; i++){
+        if(candles[i]===tallest){
+            velas++
+        }
+    }
+    return velas
 }
 
 function main() {
