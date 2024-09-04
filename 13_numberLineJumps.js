@@ -35,6 +35,19 @@ function readLine() {
 
 function kangaroo(x1, v1, x2, v2) {
     // Write your code here
+    
+    let jump1 = x1
+    let jump2 = x2
+    let yesNo = 'NO'
+    
+    for(let i=0; i<10000; i++){
+        jump1 += v1
+        jump2 += v2
+        if(jump1===jump2){
+            yesNo = 'YES'
+        }
+    }
+    return yesNo 
 }
 
 function main() {
